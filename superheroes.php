@@ -63,10 +63,23 @@ $superheroes = [
   ], 
 ];
 
-?>
+$query = isset($_GET['query']) ? trim($_GET['query']) : "";
 
-<ul>
-<?php foreach ($superheroes as $superhero): ?>
-  <li><?= $superhero['alias']; ?></li>
-<?php endforeach; ?>
-</ul>
+// If no query return all Superheroes
+if($query === ""){
+    echo json_encode($superheroes);
+    exit;
+}
+
+// Finding Superheroes by name or alias
+foreach($superheroes as $superhero){
+    if(strcasecmp($superhero['alias'], $query) === 0 || strcasecmp($superhero['name'], $query) === 0){
+        echo json_encode($superhero);
+        exit;
+    }
+}
+
+// If not found
+echo json_encode(null);
+
+?>
