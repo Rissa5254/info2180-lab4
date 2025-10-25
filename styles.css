@@ -1,17 +1,63 @@
-body{
-  background-color: grey;
-}   
+Body{
+  background-color: lightgrey;
+}
+
+.controls{
+  padding-left: 150px;
+  padding-right: 150px;
+}
 
 h1{
-    font-size: 50px;
+  background-color: rgb(202, 79, 97);
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
 }
 
 button{
-    color: black;
-    background-color: transparent;
+    color: white;
+    background-color: rgb(60, 230, 60);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;  
     border-radius: 4px; 
-    padding: 0px 20px; 
+    padding: 7px 10px; 
     cursor: pointer;
+    border: 0cm;   
 }
 
+button:hover{
+  color: white;
+  background-color: blue;
+}
+
+#search{
+  width: 850px;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+h2{
+  margin-top: 34px;
+}
+
+h3{
+  font-weight: bolder; 
+  font-size: 20px; 
+}
+
+h3, h4, p.not-found{
+  text-transform: uppercase;
+  
+}
+
+p.not-found{
+  color: red;
+  font-weight: bolder;
+}
