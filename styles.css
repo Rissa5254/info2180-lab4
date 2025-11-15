@@ -36,7 +36,7 @@ button:hover{
 }
 
 #search{
-  width: 850px;
+  width: 810px;
   font-size: 18px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   border-radius: 4px;
@@ -54,7 +54,6 @@ h3{
 
 h3, h4, p.not-found{
   text-transform: uppercase;
-  
 }
 
 p.not-found{
